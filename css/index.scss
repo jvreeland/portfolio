@@ -1,0 +1,82 @@
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-muted,
+q,
+cite,
+.list-block {
+  color: #777;
+}
+.text-primary {
+  color: #F94C8C;
+}
+p,
+q,
+cite {
+  font-size: 14px;
+  line-height: 1.75;
+}
+p.large {
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+a {
+  color: #F94C8C;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #f71b6c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+img {
+  margin-bottom: 0;
+}
+
+.intro-container {
+  background-image: url("../images/bali-sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  color: white;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    font-size: 55px;
+    line-height: 35px;
+  }
+  .logo {
+    color: #f7f7f7;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+footer {
+  height: 200px;
+  background-color: gray;
+}
