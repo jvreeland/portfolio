@@ -50,11 +50,45 @@ img {
   margin-bottom: 0;
 }
 
-.intro-container {
-  background-image: url("../images/bali-sunset.jpg");
+.fa-inverse {
+  color: #fdc51b;
+  font-size: 75px;
+}
+.portfolio-caption {
+  text-align: left;
+  min-height: 340px;
+  h4 {
+    padding-bottom: 20px;
+  }
+  q {
+    text-align: left !important;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  .list-block {
+    list-style-type: none;
+    padding-top: 30px;
+  }
+}
+
+.intro-container-overlay {
+  background-image: url("../images/pineapple.jpg");
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
+}
+
+.intro-container {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   text-align: center;
   color: white;
@@ -63,9 +97,12 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  @media only screen and (max-width: 500px) {
+    // background-image: none;
+  }
   h1 {
     font-size: 55px;
-    line-height: 35px;
   }
   .logo {
     color: #f7f7f7;
@@ -78,5 +115,5 @@ img {
 
 footer {
   height: 200px;
-  background-color: gray;
+  background-color: #333;
 }

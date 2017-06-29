@@ -7,6 +7,7 @@ import legacy from 'css/legacy.scss'
 import index from 'css/index.scss'
 import adviceMatchThumbnail from 'images/portfolio/bs-advice-match-thumbnail.png'
 import fundPagesThumbnail from 'images/portfolio/bs-fundpages-thumbnail.png'
+import hundredXThumbnail from 'images/portfolio/hundredx-thumbnail.png'
 
 export default class Index extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export default class Index extends React.Component {
       <div>
         <header>
           <div className="intro-container">
+            <div className="intro-container-overlay"></div>
             <h1> Hi, Im Jessica.</h1>
             <h2> I build and style web applications </h2>
           </div>
@@ -29,15 +31,13 @@ export default class Index extends React.Component {
             <div className="row text-center">
                 <div className="col-md-4">
                     <span className="fa-stack fa-4x">
-                        <i className="fa fa-circle fa-stack-2x text-primary"></i>
                         <i className="fa fa-gear fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 className="service-heading">Web Development</h4>
-                    <p className="text-muted">Specializing in web applications using ES6, Angular, Webpack, and Gulp</p>
+                    <p className="text-muted">Specializing in web applications using ES6, React, Redux, Angular, and Webpack</p>
                 </div>
                 <div className="col-md-4">
                     <span className="fa-stack fa-4x">
-                        <i className="fa fa-circle fa-stack-2x text-primary"></i>
                         <i className="fa fa-tablet fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 className="service-heading">Responsive Design</h4>
@@ -45,7 +45,6 @@ export default class Index extends React.Component {
                 </div>
                 <div className="col-md-4">
                     <span className="fa-stack fa-4x">
-                        <i className="fa fa-circle fa-stack-2x text-primary"></i>
                         <i className="fa fa-user fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 className="service-heading">User Experience</h4>
@@ -65,40 +64,45 @@ export default class Index extends React.Component {
               </div>
               <div className="row">
                   <div className="col-md-4 col-sm-6 portfolio-item">
-                      <a href="#portfolioModal1" className="portfolio-link" data-toggle="modal">
+                      <a href="https://hundredxinc.com/" className="portfolio-link" data-toggle="modal">
+                          <img src={hundredXThumbnail} className="img-responsive" alt=""/>
+                      </a>
+                      <div className="portfolio-caption">
+                          <h4>Express Feedback</h4>
+                          <q>Our universally understood UX delivers exceptional response rates. Express Feedback easily integrates into your channels providing better control over delivery and context.</q><cite>- Hundredxinc.com</cite>
+                          <ul className="list-block">
+                              <li>Technology Used: React, Redux, Webpack, Sass </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div className="col-md-4 col-sm-6 portfolio-item">
+                      <a href="https://brightscope.com/fund-pages" className="portfolio-link" data-toggle="modal">
                           <img src={fundPagesThumbnail} className="img-responsive" alt=""/>
                       </a>
                       <div className="portfolio-caption">
                           <h4>BrightScope Fund Pages</h4>
-                          <p className="text-muted">Web Application</p>
-                          <p>Technology Used: Angular, Sass, HighCharts</p>
+                          <q>Access trended analysis on over 30,000 share classes, 10,000 funds, and over 800 fund families with ease. Fund Pages provides deep insights for investors and industry experts at any level.</q> <cite>- Brightscope.com</cite>
+                          <ul className="list-block">
+                              <li>Technology Used: Angular, Webpack, CoffeeScript, Sass, Jade</li>
+                          </ul>
                       </div>
                   </div>
                   <div className="col-md-4 col-sm-6 portfolio-item">
-                      <a href="#portfolioModal2" className="portfolio-link" data-toggle="modal">
+                      <a href="https://brightscope.com" className="portfolio-link" data-toggle="modal">
                           <img src={adviceMatchThumbnail} className="img-responsive" alt=""/>
                       </a>
                       <div className="portfolio-caption">
                           <h4>BrightScope Advice Match</h4>
-                          <p className="text-muted">Web Application</p>
-                          <p>Technology Used: Angular, Material UI, </p>
-                      </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6 portfolio-item">
-                      <a href="#portfolioModal3" className="portfolio-link" data-toggle="modal">
-                          <img src={adviceMatchThumbnail} className="img-responsive" alt=""/>
-                      </a>
-                      <div className="portfolio-caption">
-                          <h4>Express Feedback</h4>
-                          <p className="text-muted">Mobile Web Application</p>
-                          <p>Technology Used: React, Redux, Webpack, Sass</p>
+                          <q>Our AdviceMatch platform puts you in control of your search for a financial advisor. Based on your unique needs, we individually rank all of your advisor options so you can focus on those that are most relevant to you.</q><cite>- Brightscope.com</cite>
+                          <ul className="list-block">
+                              <li>Technology Used: Angular, CoffeeScript, Grunt, Sass </li>
+                          </ul>
                       </div>
                   </div>
               </div>
           </div>
         </section>
         <footer id="footer">
-          <div className="logo">JV</div>
         </footer>
       </div>
     )
